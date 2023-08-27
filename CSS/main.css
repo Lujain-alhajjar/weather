@@ -1,0 +1,101 @@
+body{
+    background-color: #eaeaea;
+    font-family: 'Roboto', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.33s ease
+
+}
+
+.App{
+    text-align: center;
+    transition: 0.2s ease;
+}
+
+.App .hot{
+    background-image: linear-gradient(
+        to bottom,
+        rgba(225,16,16,0.52),
+        rgba(0,0,0,0.73),
+    );
+}
+
+.App .cold{
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0,225,213,0.52),
+        rgba(0,0,0,0.73),
+    );
+}
+
+main{
+    min-height: 100%;
+}
+
+.search-ber{
+    border: none;
+    width:80%;
+    margin: 25px 10%;
+    padding: 15px 5% ;
+    color: #737272;
+    font-size: 25px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 2px 1px rgba(0, 0, 0, 0.2);
+    outline: none; 
+}
+button{
+    width: 80%;
+    margin: 10px 10%;
+    padding: 10px;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    cursor: pointer;
+    border: 1px solid white;
+    font-size: 20px;
+}
+button:hover{
+    color: rgb(231, 134, 134);
+    background-color: rgb(73, 73, 73);
+    border: 1px solid rgb(231, 134, 134);
+}
+.search-ber:focus{
+    background-color: #fafafa;
+}
+.location-container ,
+.weather-container{
+    margin: 15px 0;
+    width: 100%;
+}
+.location-container .location,
+.date,
+.temperature,
+.weather,
+.weather-desc{
+    width: 70%;
+    margin: 10px 15%;
+    padding: 10px 5%;
+    border : 1px solid rgb(80, 80, 80);
+    border-radius: 20px;
+}
+svg{
+    margin-left: 10px;
+    margin-top: 15px;
+    font-size: 70px;
+    width: 50%;
+}
+.fa-smog,
+.fa-cloud-rain,
+.fa-cloud-sun-rain,
+.fa-cloud,
+.fa-soundcloud,
+.fa-cloud-sun{
+    color: rgb(102, 203, 207);
+}
+.fa-sun{
+    color: rgb(197, 197, 4);
+}
